@@ -1,0 +1,20 @@
+.shopping-detail {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .shopping-detail {
+        display: grid;
+    }
+}
+
+.shopping-detail .detail {
+    display: flex;
+    gap: 20px;
+}
+
+.shopping-detail .detail p {
+    color: rgb(113, 111, 111);
+}

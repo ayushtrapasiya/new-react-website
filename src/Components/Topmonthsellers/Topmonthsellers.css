@@ -1,0 +1,16 @@
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+    li{
+        font-size: 20px;
+        cursor: pointer;
+        list-style: none;
+    }
+    .underline {
+        text-decoration: underline !important;
+        color: #ff6f61;
+        text-underline-offset: 5px;
+        }

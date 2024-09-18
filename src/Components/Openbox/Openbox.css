@@ -1,0 +1,86 @@
+.main-open-box{
+     height: auto;
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    top: 10%;
+    
+    z-index: 222222222222;
+    bottom: 10px;
+   
+    display: block;
+    overflow: hidden;
+}
+
+.close{
+    display: none;
+}
+.left-seaction{
+    background-color: rgb(213, 206, 206);
+     
+}
+ 
+.image { 
+    height: 80vh;
+     
+    mix-blend-mode: multiply;
+}
+.button-group{
+    display: flex;
+    gap: 30px;
+    margin-top: 100px;
+}
+.right-seaction{
+    padding: 30px;
+}
+.cart-button{
+   width: auto;
+   padding: 10px;
+   background-color: black;
+   color: white;
+   border: none;
+}
+
+.Watch-list-button{
+    width: auto;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.pop-up-close-btn{
+    background-color: inherit;
+    font-size: 30px;
+    position: absolute;
+    border: none;
+    top: 0;
+    right: 10px;
+}
+
+
+
+@media (max-width :768px){
+    .image{
+        height: 40vh;
+        position:  relative;
+        width: 50%;
+
+                   
+    }
+    .main-open-box{
+        height: auto;
+        position: sticky;
+        top: 0px;
+        right: 50px;
+        bottom: 10px;
+        margin: auto;
+    }
+    .button-group{
+      margin-top: 0;
+         position: relative;
+         left: 50%;
+         right: 50%;
+         transform: translate(-50%)
+    }
+}

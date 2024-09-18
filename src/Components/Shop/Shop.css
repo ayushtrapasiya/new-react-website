@@ -1,0 +1,93 @@
+  
+.shop {
+  position: fixed;
+  top: 0;
+  right: -400px;  
+  width: 400px;
+  height: 100%;
+  overflow: auto;
+  background: white;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+  z-index: 1000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: right 0.3s ease; 
+}
+@media (max-width:500px){
+  .shop{
+    width: 350px;
+  }
+}
+.shop.open {
+  right: 0;  
+}
+
+.shop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop h2 {
+  margin-top: 0;
+}
+
+.close-icon {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.cart-detail {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+
+.cart-img {
+  height: 100px;
+  width: 100px;
+  
+}
+.small-detail{
+  font-size: 30px;
+  color: rgba(69, 69, 69, 0.385);
+}
+.cart-btn{
+  background-color: inherit;
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  gap:5px;
+}
+
+.no-item{
+  text-align: center;
+}
+
+.total{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  width: 100%;
+  color: white;
+  height: 50px;
+  align-items: center;
+}
+.btn-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.cart-second-btn{
+  height: 50px;
+  width: 200px;
+  background-color: black;
+  color: white;
+  border: none;
+}

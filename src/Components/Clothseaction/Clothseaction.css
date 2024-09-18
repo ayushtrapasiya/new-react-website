@@ -1,0 +1,174 @@
+.cloth-container {
+    display: flex;
+    flex-direction: column;
+
+    .desktop-view,
+    .mobile-view {
+        display: none;
+    }
+
+   
+
+    .desktop-view {
+        @media (min-width: 1024px) {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+
+            .image-container {
+                background-size: cover;
+                background-position: center;
+                height: 500px;
+                width: 420px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .women-btn{
+                    height: 50px;
+                    width: 140px;
+                    background-color: white;
+                    border: none;
+                   position: absolute;
+                   bottom: 50px;
+                }
+                .men-btn{
+                    height: 50px;
+                    width: 140px;
+                    background-color: white;
+                    border: none;
+                   position: absolute;
+                   bottom: 50px;
+                }
+                .kid-btn{
+                    height: 50px;
+                    width: 140px;
+                    background-color: white;
+                    border: none;
+                   position: absolute;
+                   bottom: 50px;
+                }
+
+                h1 {
+                    color: rgb(0, 0, 0);
+                    font-weight: bolder;
+                    z-index: 2;
+                }
+
+                .arrow {
+                    margin-left: 5px;
+                    transition: transform 0.5s ease;
+                }
+
+                .image-container:hover .arrow {
+                    transform: translateX(10px);
+                }
+            }
+
+            .women-image {
+                background: url('../../../public/Women.jpg');
+                background-size: cover;
+            }
+
+            .men-image {
+                background: url('../../../public/men.jpg');
+                background-size: cover;
+            }
+
+            .kid-image {
+                background: url('../../../public/kids.jpeg');
+                background-size: cover;
+            }
+        }
+    }
+
+    .mobile-view {
+        @media (max-width: 1023px) {
+            display: block;
+            width: 100%;
+
+            .carousel {
+                width: 100vw;
+                height: 500px;
+                 
+                .slick-slide {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .women-image {
+                        background: url('../../../public/Women.jpg');
+                        background-size: cover;
+                         
+                    }
+        
+                    .men-image {
+                        background: url('../../../public/men.jpg');
+                        background-size: cover;
+                    }
+        
+                    .kid-image {
+                        background: url('../../../public/kids.jpeg');
+                        background-size: cover;
+                    }
+
+                    .image-slide {
+                        background-size:contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        height: 500px;
+                        width: 100vw !important;
+                        display: flex !important;
+                        justify-content: center ;
+                        align-items: center ; 
+ 
+                        .women-btn{
+                            height: 50px;
+                            width: 140px;
+                            background-color: white;
+                            border: none;
+                           position: absolute;
+                           bottom: 50px;
+                        }
+                        .men-btn{
+                            height: 50px;
+                            width: 140px;
+                            background-color: white;
+                            border: none;
+                           position: absolute;
+                           bottom: 50px;
+                        }
+                        .kid-btn{
+                            height: 50px;
+                            width: 140px;
+                            background-color: white;
+                            border: none;
+                           position: absolute;
+                           bottom: 50px;
+                        }
+                        h1 {
+                            color: rgb(0, 0, 0);
+                            font-weight: bolder;
+                            z-index: 2;
+                        }
+
+                        .arrow {
+                            margin-left: 5px;
+                            transition: transform 0.5s ease;
+                        }
+                    }
+                }
+
+                .slick-prev,
+                .slick-next {
+                    z-index: 1;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    .slick-slide:hover .arrow {
+        transform: translateX(10px);
+    }
+}
