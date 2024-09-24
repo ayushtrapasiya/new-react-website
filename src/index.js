@@ -16,7 +16,7 @@ import Checkout from './Components/Checkout/Checkout';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let routes = createBrowserRouter([
   { 
-    path: "/new-react-website", 
+    path: "/", 
     element: <App/>,
     children : [{
       path : "/new-react-website",
