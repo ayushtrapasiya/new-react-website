@@ -19,7 +19,7 @@ let routes = createBrowserRouter([
     path: "/", 
     element: <App/>,
     children : [{
-      path  :"/",
+      path : "/new-react-website",
       element :<Home/>
     } ,{
       path : "/About",
@@ -42,7 +42,8 @@ let routes = createBrowserRouter([
       element : <Checkout/>
     }
     ]
-  }
+  } ,
+  
 ])
 
 root.render(
